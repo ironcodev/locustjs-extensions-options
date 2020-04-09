@@ -1,4 +1,4 @@
-import { isSomeString, isObject, isSomeObject, isArray, isSomeArray } from 'locustjs-base'
+import { isSomeString, isObject, isSomeObject, isArray } from 'locustjs-base'
 
 function configure(arg) {
 	let result = [];
