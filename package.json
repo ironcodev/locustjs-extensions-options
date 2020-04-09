@@ -1,0 +1,26 @@
+{
+  "name": "locustjs-extensions-options",
+  "version": "1.0.0",
+  "description": "This library provides a shouldExtend() function for other locustjs-extensions libraries",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ironcodev/locustjs-extensions-options.git"
+  },
+  "keywords": [
+    "locustjs",
+    "extensions"
+  ],
+  "author": "Iron Code",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ironcodev/locustjs-extensions-options/issues"
+  },
+  "homepage": "https://github.com/ironcodev/locustjs-extensions-options#readme",
+  "dependencies": {
+    "locustjs-base": "^1.0.1"
+  }
+}
