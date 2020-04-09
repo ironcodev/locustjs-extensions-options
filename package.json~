@@ -1,6 +1,6 @@
 {
   "name": "locustjs-extensions-options",
-  "version": "1.0.2",
+  "version": "1.0.1",
   "description": "This library provides a shouldExtend() function for other locustjs-extensions libraries",
   "main": "index.js",
   "scripts": {
