@@ -1,6 +1,6 @@
 {
   "name": "locustjs-extensions-options",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "This library provides a shouldExtend() function for other locustjs-extensions libraries",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/ironcodev/locustjs-extensions-options#readme",
   "dependencies": {
-    "locustjs-base": "^1.0.3"
+    "locustjs-base": "^1.0.4"
   }
 }
