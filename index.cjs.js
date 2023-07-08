@@ -55,7 +55,11 @@ class ExtensionHelper {
         }
       }
       if (obj.prototype[fnName] === undefined || this.options.force) {
-        obj.prototype[fnName] = fn;
+        Object.defineProperty(obj.prototype, fnName, {
+          value: fn,
+          writable: true,
+          configurable: true
+        });
         if (this.logger && isFunction(this.logger.log)) {
           this.logger.log(`${fnName} extended.`);
         }

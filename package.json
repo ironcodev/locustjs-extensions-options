@@ -1,6 +1,6 @@
 {
   "name": "@locustjs/extensions-options",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "This library provides a helper ExtensionsOptionsHelper class that is used in other locustjs-extensions libraries",
   "main": "index.cjs.js",
   "module": "index.esm.js",
