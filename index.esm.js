@@ -57,9 +57,9 @@ class ExtensionHelper {
 			(this.options.include.indexOf('*') >= 0 || this.options.include.indexOf(fnName) >= 0) &&
 			this.options.exclude.indexOf(fnName) < 0
 	}
-	extend(obj, fnName, fn) {
+	extend(obj, fnName, fn, direct = false) {
 		if (obj && this.shouldExtend(fnName)) {
-			if (!isObject(obj.prototype)) {
+			if (!direct && !isObject(obj.prototype)) {
 				obj.prototype = {}
 
 				if (this.logger && isFunction(this.logger.warn)) {
@@ -67,8 +67,10 @@ class ExtensionHelper {
 				}
 			}
 
-			if (obj.prototype[fnName] === undefined || this.options.force) {
-				Object.defineProperty(obj.prototype, fnName, {
+			const target = direct ? obj : obj.prototype
+
+			if (target[fnName] === undefined || this.options.force) {
+				Object.defineProperty(target, fnName, {
 					value: fn,
 					writable: true,
 					configurable: true,
