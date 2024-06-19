@@ -59,7 +59,7 @@ class ExtensionHelper {
 	}
 	extend(obj, fnName, fn, direct = false) {
 		if (obj && this.shouldExtend(fnName)) {
-			if (!direct && !isObject(obj.prototype)) {
+			if (!direct && obj.prototype == null) {
 				obj.prototype = {}
 
 				if (this.logger && isFunction(this.logger.warn)) {
