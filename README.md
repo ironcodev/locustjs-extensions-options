@@ -1,5 +1,5 @@
 # About
-This library provides a helper `ExtensionHelper` class that is used in other `locustjs-extensions` libraries.
+This library provides a helper `ExtensionHelper` class that is used in other `@locustjs/extensions-...` libraries.
 
 ## Options
 `ExtensionHelper` constructor has two parameters:

@@ -1,12 +1,11 @@
 {
   "name": "@locustjs/extensions-options",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "This library provides a helper ExtensionsOptionsHelper class that is used in other locustjs-extensions libraries",
-  "main": "index.cjs.js",
-  "module": "index.esm.js",
+  "main": "dist/index.js",
+  "module": "src/index.js",
   "scripts": {
-    "build": "babel index.esm.js -o index.cjs.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",
@@ -23,10 +22,11 @@
   },
   "homepage": "https://github.com/ironcodev/locustjs-extensions-options#readme",
   "devDependencies": {
-    "@babel/cli": "^7.21.0",
-    "@babel/core": "^7.22.7"
+    "@babel/preset-env": "^7.26.7",
+    "@rollup/plugin-babel": "^6.0.4",
+    "rollup": "^4.34.0"
   },
   "dependencies": {
-    "@locustjs/base": "^2.1.0"
+    "@locustjs/base": "^4.4.0"
   }
 }
