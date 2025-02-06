@@ -92,11 +92,12 @@ class ExtensionHelper {
 
       const target = direct ? obj : obj.prototype;
 
-      if (target[fnName] === undefined || this.options.force) {
+      if (!Object.hasOwn(target, fnName) || this.options.force) {
         Object.defineProperty(target, fnName, {
           value: fn,
           writable: true,
           configurable: true,
+          enumerable: false
         });
 
         this._log(`${fnName} extended.`);

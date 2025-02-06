@@ -114,11 +114,12 @@ var ExtensionHelper = /*#__PURE__*/function () {
           this._warn("prototype is not an object. a default {} object assigned to prototype.");
         }
         var target = direct ? obj : obj.prototype;
-        if (target[fnName] === undefined || this.options.force) {
+        if (!Object.hasOwn(target, fnName) || this.options.force) {
           Object.defineProperty(target, fnName, {
             value: fn,
             writable: true,
-            configurable: true
+            configurable: true,
+            enumerable: false
           });
           this._log("".concat(fnName, " extended."));
         } else {
