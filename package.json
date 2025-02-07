@@ -1,6 +1,6 @@
 {
   "name": "@locustjs/extensions-options",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "This library provides a helper ExtensionsOptionsHelper class that is used in other locustjs-extensions libraries",
   "main": "dist/index.js",
   "module": "src/index.js",
@@ -27,6 +27,6 @@
     "rollup": "^4.34.0"
   },
   "dependencies": {
-    "@locustjs/base": "^4.4.0"
+    "@locustjs/base": "^4.4.1"
   }
 }

@@ -121,7 +121,7 @@ var ExtensionHelper = /*#__PURE__*/function () {
             configurable: true,
             enumerable: false
           });
-          this._log("".concat(fnName, " extended."));
+          this._log("".concat(fnName, " extended (direct = ").concat(direct, ")."));
         } else {
           this._warn("".concat(fnName, " is already extended."));
         }

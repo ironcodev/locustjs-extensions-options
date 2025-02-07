@@ -100,7 +100,7 @@ class ExtensionHelper {
           enumerable: false
         });
 
-        this._log(`${fnName} extended.`);
+        this._log(`${fnName} extended (direct = ${direct}).`);
       } else {
         this._warn(`${fnName} is already extended.`);
       }
